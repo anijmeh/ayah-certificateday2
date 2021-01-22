@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Calculator-AgoraDay2</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    </head>
+    <body id="page">
+        <div class="calculator">
+            <input type="number" id="first-input" placeholder="First Number"/>
+            <br/>
+            <input type="number" id="second-input" placeholder="Second Number"/>
+            <br/>
+            <button class="add" type="submit" onclick="add()">Add</button>
+            <button class="subtract" type="submit" onclick="subtract()">Subtract</button>
+            <button class="multiply" type="submit" onclick="multiply()">Multiply</button>
+            <button class="divide" type="submit" onclick="divide()">Divide</button>
+            <br/>
+            <input type="text" id="answer" placeholder="Result"/>
+            <br/>
+            <span id="title"><strong>CALCULATOR</strong></span>
+        </div> 
+        <script>
+            function add() {
+                let first = document.getElementById("first-input");
+                let second = document.getElementById("second-input");
+                if (first.value.length == 0 || second.value.length == 0)
+                    answer.value = "Needs Two Inputs"
+                else 
+                    answer.value = parseInt(first.value) + parseInt(second.value);
+            }
+            function subtract() {
+                let first = document.getElementById("first-input");
+                let second = document.getElementById("second-input");
+
+                if (first.value.length == 0 || second.value.length == 0)
+                    answer.value = "Needs Two Inputs"
+                else 
+                    answer.value = first.value - second.value;
+            }
+            function multiply() {
+                let first = document.getElementById("first-input");
+                let second = document.getElementById("second-input");
+                if (first.value.length == 0 || second.value.length == 0)
+                    answer.value = "Needs Two Inputs"
+                else 
+                    answer.value = first.value * second.value;
+            }
+            function divide() {
+                let first = document.getElementById("first-input");
+                let second = document.getElementById("second-input");
+                
+                if (first.value.length == 0 || second.value.length == 0)
+                    answer.value = "Needs Two Inputs"
+                else 
+                    answer.value = first.value / second.value;
+            }
+        </script>
+    </body>
+</html>

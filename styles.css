@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#page {
+    background-color: rgb(193, 218, 255);
+}
+
+.calculator {
+    text-align: center;
+    padding-top: 10%;
+}
+input{
+    margin: 10px;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    
+}
+button {
+    padding: 30px;
+    font-size: 1.2rem;
+    background-color: rgb(180, 180, 180);
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#title {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+}
